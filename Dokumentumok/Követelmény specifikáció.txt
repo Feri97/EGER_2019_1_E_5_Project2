@@ -1,0 +1,25 @@
+Követelmény specifikáció
+
+1. Bevezetés
+
+2. Jelenlegi helyzet
+
+3. Vágyálom rendszer
+A projektünk célja egy olyan rendszer létrehozása, amely könnyen elérhető, kikapcsolódást nyújt a 
+felhasználónak és szórakoztató is egyben.
+Mivel manapság már mindenki megengedheti magának, hogy okostelefonja legyen, ezért a programunkat úgy
+fejlesztjük, hogy az elérhető legyen asztali számítógépen és okostelefonon egyaránt.
+A program elindításakor a kezdőlap fogad minket ahol egy bevezetőt olvashatunk el. Innen tovább tudunk lépni az információkra illetve a bejelentkezésre. A Bejelentkezést követően feltöltés és lejátszás oldalak is elérhetőek. Ezek az oldalak könnyen kezelhetőek és látványos felülettel rendelkeznek, hogy felkeltsék a felhasználó érdeklődését. A feltöltésnél előadó nevet, album nevet, megjelenési évet, és egy rövid ismertetőt kell hozzáadni az adott zenéhez.
+A későbbiekben attól függően, hogy mennyire lesz sikeres a projektünk, a következő fejlesztéseket szeretnénk
+végrehajtani.
+
+Lejátszó:
+-Lejátszási lista hozzáadása.
+
+Általános:
+-Témák hozzáadása.
+
+
+4. Jelenlegi üzleti folyamatok
+
+5. Igényelt üzleti folyamatok
