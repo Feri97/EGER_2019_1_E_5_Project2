@@ -6,6 +6,8 @@ Funkcionális specifikáció
 
 3. Vágyálomrendszer
 
+Először egy kezdő oldal fogadja a felhasználót, ahol el tudja olvasni, mi is az oldal célja és hogyan működik. Az "Contact us" fület választva, átirányít egy olyan lapra, ahol azok az elérhetőségeink találhatók(e-mail, telefon), amelyeken keresztül felvehetik a kapcsolatot a fejlesztőkkel, és az esetleges problémákat, észrevételeket közölhetik. A "Log in" füllel tudnak bejelentkezni a felhasználók, ha nincs még fiókjuk az itt megjelenő "Sign in"-re kattintva regisztrálhatnak. A bejelentkezést követően a feltöltött zenéket meghallgathatják, illetve új zenéket is feltölthetnek. Az adott audio fájl a hozzá tartozó adatok(előadó, album, megjelenési év, leírás) megadása nélkül nem feltölthető és ezeket az adatokat is ellenőrizzük, az esetleges hibák elkerülése végett.
+
 4. Jelenlegi üzleti folyamatok
 
 5. Igényelt üzleti folyamatok
