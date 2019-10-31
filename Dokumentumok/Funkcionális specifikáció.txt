@@ -20,6 +20,20 @@ Mindezek mellett a szolgáltatás ingyenes, ami azzal jár, hogy reklámokkal ke
 
 5. Igényelt üzleti folyamatok
 
+A megrendelő véleménye az, hogy egy le egyszerűsített, csakis zene megosztására szolgáló weboldal nagyon sikeres lehet. Követelménye, hogy a reklámok ne zavarják a felhasználókat és a lehető legvisszafogottabbak legyenek.
+
+-Feltöltés:
+Fontos kritérium, hogy zenéket csak regisztrált felhasználók tölthessenek fel annak adataival. Az interneten fellelhető oldalakat információ szegénynek találja, ugyanis nem mindig kötelező megadni a zenével kapcsolatos adatokat. Ide tartozik az előadó neve, az album címe, a megjelenés éve és opcionálisan egy rövid leírás is. Illetve azt szeretné, hogy egy hibás próbálkozás után az adatlapról ne tűnjenek el az adatok, továbbá jelezzük hol keletkezett hiba és lehetőség szerint a miértjét is.
+
+-Lejátszás:
+Szüksége van egy saját online lejátszóra, hogy letöltés nélkül is meghallgathathatóak legyenek az adatbázisban szereplő zenék. Fontos, hogy könnyen kezelhető és intuitív legyen, a felhasználók dolgának megkönnyítése érdekében.
+
+-Modell:
+Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
+								-> Feltöltés
+		-> Ismertető
+		-> Elérhetőségek
+
 6. Követelménylista
 		
 7. Képernyő terv
