@@ -9,8 +9,13 @@ A 80-as évek tehát a walkman és a magnókazetták korszaka volt, a 90-es éve
 lejátszott cd lemezek vették át az uralmatt a hordozható lejátszók területén. 2000-es évek a digitális lejátszók korszak lett aminek
 éllovasa az ipod volt. Ezek többsége már nem csak zene hanem videó lejátszásra is alkalmazasak voltak. Illetve az eddigi 10-20 zene szám helyett
 már több száz zenét lehetett tárolni egyetlen lejátszón.
+A 2010-es évekre a digitális zenelejátszók jobbára eltüntek, ugyanis ezek szerepét átvette szép fokozatosan az okostelefonok amiket sok egyéb más
+mellett digitális lejátszóként is használható, evvel kiváltva, az előbbit. Ebben az évtizedben, a mobilinternet elérhetőségének és sebességének javulásával,
+elérhetővé vált az hogy nem kell feltétlenül több száz zenét az eszközön offline tárolni, hanem azokat internetről streamelve, kiváló minőségben lehessen hallgatni.
 
 2. Jelenlegi helyzet
+A mai világban streaming szolgáltatások, legyen szó filmes/sororzatos vagy 
+
 
 3. Vágyálom rendszer
 A projektünk célja egy olyan rendszer létrehozása, amely könnyen elérhető, kikapcsolódást nyújt a 
