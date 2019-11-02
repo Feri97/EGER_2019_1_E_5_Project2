@@ -48,7 +48,13 @@ Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
 		-> Elérhetőségek
 
 6. Követelménylista
-		
+	K1:Lejátszó:
+	 	Alkalmazás egyik legfontosabb része, lehetőleg ne az alap html lejátszó legyen, hanem egy javascript/jquery alapokon nyugvó lejátszó legyen.
+	K2:Feltöltés:
+		Zenék feltöltése amiket le lehet majd játszani.
+	K3:Keresés:
+		Lehesessen keresni a feltöltött zenék között.
+	K4:Jogkörök:	
 7. Képernyő terv
 
 8. Használati esetek
