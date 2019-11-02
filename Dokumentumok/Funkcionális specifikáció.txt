@@ -6,8 +6,8 @@ Előnyük, a eddigi fizikai és digitális terjesztésekkel szemben, hogy ezen e
 lehet hozzáférni és ehez nem kell különleges lejátszó hardver, csak egy okostelefon vagy egy számitógép és persze egy stabil internethozzáférés. Mi célunk,
 hogy a jelenlegi igényeket figyelembe véve, egy mindenki számára elérhető online zenelejátszó fejlesztése.
 
-
 2. Jelenlegi helyzet
+
 
 3. Vágyálomrendszer
 
