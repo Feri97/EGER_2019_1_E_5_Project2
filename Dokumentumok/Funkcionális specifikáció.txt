@@ -7,7 +7,9 @@ lehet hozzáférni és ehez nem kell különleges lejátszó hardver, csak egy o
 hogy a jelenlegi igényeket figyelembe véve, egy mindenki számára elérhető online zenelejátszó fejlesztése.
 
 2. Jelenlegi helyzet
-
+A jelenlegi zenei streaming piac viszonylag eléggé telitett. A piac mostani nagy éllovasai: a spotify, apple music, google play music, deezer több ezer
+zeneszámot biztosit elérésre. Persze nem ingyen érhetők el, illetve a spotify-t lehet ingyenesen használni, bár ez esetben eléggé funkciószegény szolgáltatás
+érhető el, plusz két zeneszám között hangosreklámok helyezkednek el. 
 
 3. Vágyálomrendszer
 
