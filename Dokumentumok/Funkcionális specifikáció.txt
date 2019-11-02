@@ -1,15 +1,21 @@
 Funkcionális specifikáció
 
 1. Áttekintés
-Napjainkban nehéz olyan háztartást találni, ahol legalább egy streaming szolgáltattásra -legyen szó zenével vagy filmmel/sorozattal foglalkozó- van előfizetés. 
-Előnyük, a eddigi fizikai és digitális terjesztésekkel szemben, hogy ezen előbb felsorolt terjesztési formákból származó egy példány árából, többezer alkotáshoz
-lehet hozzáférni és ehez nem kell különleges lejátszó hardver, csak egy okostelefon vagy egy számitógép és persze egy stabil internethozzáférés. Mi célunk,
-hogy a jelenlegi igényeket figyelembe véve, egy mindenki számára elérhető online zenelejátszó fejlesztése.
+Napjainkban nehéz olyan háztartást találni, ahol legalább egy streaming szolgáltattásra 
+-legyen szó zenével vagy filmmel/sorozattal foglalkozó- van előfizetés. 
+Előnyük, a eddigi fizikai és digitális terjesztésekkel szemben, hogy ezen előbb felsorolt 
+terjesztési formákból származó egy példány árából, többezer alkotáshoz
+lehet hozzáférni és ehez nem kell különleges lejátszó hardver, csak egy okostelefon vagy 
+egy számitógép és persze egy stabil internethozzáférés. Mi célunk,hogy a jelenlegi igényeket figyelembe véve, 
+egy mindenki számára elérhető online zenelejátszó fejlesztése.
 
 2. Jelenlegi helyzet
-A jelenlegi zenei streaming piac viszonylag eléggé telitett. A piac mostani nagy éllovasai: a spotify, apple music, google play music, deezer több ezer
-zeneszámot biztosit elérésre. Persze nem ingyen érhetők el, illetve a spotify-t lehet ingyenesen használni, bár ez esetben eléggé funkciószegény szolgáltatás
-érhető el, plusz két zeneszám között hangosreklámok helyezkednek el. 
+A jelenlegi zenei streaming piac viszonylag eléggé telitett. A piac mostani nagy éllovasai: a spotify, 
+apple music, google play music, deezer több ezer zeneszámot biztosit elérésre. Persze nem ingyen érhetők el, 
+illetve a spotify-t lehet ingyenesen használni, bár ebben esetben eléggé funkciószegény szolgáltatás érhető el, plusz két zeneszám 
+között hangosreklámok helyezkednek el. Ezért a legtöbben előfizetéses (Premium) opciót választják -ami a többi szolgáltatónál 
+az alapvető igénybevételi feltétel- amivel teljes funkcióhoz való hozzáférés válik elérhetővé. Ezért a célunk egy olyan zenei streaming
+alkalmazás készitése ami, teljes funkcionalitású, de a többi streaminggel ellentétben ingyenes lenne.
 
 3. Vágyálomrendszer
 
