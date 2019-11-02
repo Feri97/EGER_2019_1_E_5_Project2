@@ -1,6 +1,11 @@
 Funkcionális specifikáció
 
 1. Áttekintés
+Napjainkban nehéz olyan háztartást találni, ahol legalább egy streaming szolgáltattásra -legyen szó zenével vagy filmmel/sorozattal foglalkozó- van előfizetés. 
+Előnyük, a eddigi fizikai és digitális terjesztésekkel szemben, hogy ezen előbb felsorolt terjesztési formákból származó egy példány árából, többezer alkotáshoz
+lehet hozzáférni és ehez nem kell különleges lejátszó hardver, csak egy okostelefon vagy egy számitógép és persze egy stabil internethozzáférés. Mi célunk,
+hogy a jelenlegi igényeket figyelembe véve, egy mindenki számára elérhető online zenelejátszó fejlesztése.
+
 
 2. Jelenlegi helyzet
 
