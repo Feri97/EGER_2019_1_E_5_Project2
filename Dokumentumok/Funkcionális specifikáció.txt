@@ -48,13 +48,31 @@ Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
 		-> Elérhetőségek
 
 6. Követelménylista
+  6.1 Funkcionális Követelmények
 	K1:Lejátszó:
 	 	Alkalmazás egyik legfontosabb része, lehetőleg ne az alap html lejátszó legyen, hanem egy javascript/jquery alapokon nyugvó lejátszó legyen.
 	K2:Feltöltés:
 		Zenék feltöltése amiket le lehet majd játszani.
 	K3:Keresés:
 		Lehesessen keresni a feltöltött zenék között.
-	K4:Jogkörök:	
+	K4:Jogkörök:
+		Adminisztrátor és felhasználó jogköröket kell tartalmazmia.
+	K5:Felhasználók és Adminok jogkörei:
+		Adminisztrátor jogok:
+			Az admin képes zenéket feltölteni, azok adatait módositani, és törölni. Valamint képesek a felhasználókat kezelni.
+		Felhasználó jogok:
+			A sima felhasználó képes az adatbázisban lévő összes zeneszám lejátszására. Illetve képes bizonyos személyes adatok megváltoztatására.
+	K6:Regisztráció:
+		Ne csak az admin tudjon hozzáadni felhasználókat a rendszerhez.
+  6.2 Nem funkcionális követelmények
+	K8:Design:
+		Felhasználóbarát külső, amibe jól elkülönölnek a különböző elemek.
+	K9:Platform:
+		Alkalmazás futtatható legyen az összes aktuálisan elérhető böngészők aktuális verziójával.
+  6.3 Biztonsági követelmények
+	K10:Titkositás:
+		A felhasználók jelszavait titkositva kell tárolni.	
+				
 7. Képernyő terv
 
 8. Használati esetek
