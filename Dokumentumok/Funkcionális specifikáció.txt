@@ -51,8 +51,8 @@ Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
   6.1 Funkcionális Követelmények
 	K1:Lejátszó:
 	 	Alkalmazás egyik legfontosabb része, lehetőleg ne az alap html lejátszó legyen, hanem egy javascript/jquery alapokon nyugvó lejátszó legyen.
-	K2:Feltöltés:
-		Zenék feltöltése amiket le lehet majd játszani.
+	K2:Zenék kezelése:
+		Zenék feltöltése amiket le lehet majd játszani és azok törlése ha szükséges.
 	K3:Keresés:
 		Lehesessen keresni a feltöltött zenék között.
 	K4:Jogkörök:
@@ -64,6 +64,8 @@ Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
 			A sima felhasználó képes az adatbázisban lévő összes zeneszám lejátszására. Illetve képes bizonyos személyes adatok megváltoztatására.
 	K6:Regisztráció:
 		Ne csak az admin tudjon hozzáadni felhasználókat a rendszerhez.
+	K7:Mentett zenék:
+		Az alkalmazás képes legyen arra, hogy a felhasználók külön listába tudják tenni azokat a számokat amik nekik tetszenek.
   6.2 Nem funkcionális követelmények
 	K8:Design:
 		Felhasználóbarát külső, amibe jól elkülönölnek a különböző elemek.
@@ -76,6 +78,22 @@ Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
 7. Képernyő terv
 
 8. Használati esetek
+ Hozzáférések jogultság szerint:
+	-sima felhasználó
+	-adminisztrátor
+
+ Sima felhasználó használati esetei:
+	-Regisztráció: A felhasználó képes önmagát beregisztrálni a rendszerbe.
+	-Bejelentkezés: Regisztráció után megnyilik a bejelentkezés lehtősége a rendszerbe.
+	-Zene lejátszás: Az adatbázisban lévő össze zenét képes lejátszani.
+	-Kedvencek kiválasztása: A felhasználó kiválaszthatja ,hogy mik azok a zeneszámok amik érdeklik őt és azokat egy külön oldalon láthatja.
+	-Felhasználói adatok módositása: A felhasznló megtudja változtatni néhány személyes adatát. Például jelszót.
+ 
+ Adminisztrátor használati esetei:
+	-Bejelentkezés: Az adminisztrátor képes bejelentkezni a rendszerbe.
+	-Zenék kezelése: Az adminisztrátor képes zenéket feltölteni az adatbázisba és ha kell törölni is azt.
+	-Felhasználók kezelése: Az admin képes a felhasználók kezelésére.
+	-Zene lejátszás: Az admin képes az adatbázisban lévő zenék lejátszására.
 
 9. Forgatókönyv
 
