@@ -101,9 +101,15 @@ Utóbbira azért van szükség mert az alkalmazás PHP oldalakból áll, amiknek
 még ahoz is szükséges a webszerver, hogy tárolni tudjuk az alkalmazáshoz szükséges adatokat (bejelentkezéshez szükséges 
 felhasználói adatok,zenék és azok adatai). Elinditáskor egy Üdvözlőoldal fogad minket, ahonan lehet bejelentkezni a rendszerbe.
 Amint beirtuk a felhasználónevünket, jelszavunkat és rányomtunk a bejelntkezés gombra akkor a rendszer összeveti a rendszerben lévő
-felhasználókkal és az alapján, hogy milyen jogosultságuak -admin vagy sima felhasználó- irányitja a megfelelő oldalra. Ha esetleg
-még nem vagyunk részese a rendszernek akkor lehetőségünk van regisztrációra, ahol egy adatlapot kitöltve, máris felhasználói vagyunk a rendszernek.
-Admin bejelntkezés esetén
+felhasználókkal és az alapján, hogy milyen jogosultságuak -admin vagy sima felhasználó- irányitja a megfelelő oldalra. Ha a jelszó vagy
+a felhasználó nem jó, akkor azt az oldal kijelzi. Ha esetleg még nem vagyunk részese a rendszernek akkor lehetőségünk van regisztrációra, 
+ahol egy adatlapot kitöltve, máris felhasználói vagyunk a rendszernek.Admin bejelntkezés esetén képesek vagyunk a zenei adatbázis bővitésére, abból 
+való lejátszásra, illetve az eddig hozzáadott felhasználók kezelésére. Zene feltőltésnél csak az adott zeneszám adatait -szám cime,előadó, album- 
+illetve magát a zenefájlt tudjuk feltölteni mp3 formátumban.Zene lejátszásnál rákattintva az adott zeneszám cimére a zene betöltődik a lejátszóba és elindul. 
+Felhasználók kezelésénél pedig képesek vagyunk a felhasználók törlésére, illetve jogosultságuk módositására. Sima felhasználó esetén képesek 
+vagyunk az adatbázisban lévő összes zene lejátszására, illetve azokból kitudjuk választani azokat, amik tetszenek és azokat egy saját 
+lejátszási listába tudjuk menteni. Illetve a sima felhasználó képes saját felhasználó adatai megváltoztatására is. Természetesen minden 
+felületről tovább lehet menni a másik felületre.
 
 
 
