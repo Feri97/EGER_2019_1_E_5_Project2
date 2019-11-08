@@ -96,6 +96,17 @@ Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
 	-Zene lejátszás: Az admin képes az adatbázisban lévő zenék lejátszására.
 
 9. Forgatókönyv
+Az alkalmazás webes felületü, ezért kell hozzá egy böngésző amivel megtudjuk nyitni, illetve kell egy webszerver is.
+Utóbbira azért van szükség mert az alkalmazás PHP oldalakból áll, amiknek a futtatásához webszerver szükséges, illetve 
+még ahoz is szükséges a webszerver, hogy tárolni tudjuk az alkalmazáshoz szükséges adatokat (bejelentkezéshez szükséges 
+felhasználói adatok,zenék és azok adatai). Elinditáskor egy Üdvözlőoldal fogad minket, ahonan lehet bejelentkezni a rendszerbe.
+Amint beirtuk a felhasználónevünket, jelszavunkat és rányomtunk a bejelntkezés gombra akkor a rendszer összeveti a rendszerben lévő
+felhasználókkal és az alapján, hogy milyen jogosultságuak -admin vagy sima felhasználó- irányitja a megfelelő oldalra. Ha esetleg
+még nem vagyunk részese a rendszernek akkor lehetőségünk van regisztrációra, ahol egy adatlapot kitöltve, máris felhasználói vagyunk a rendszernek.
+Admin bejelntkezés esetén
+
+
+
 
 10. Funkciók
 
