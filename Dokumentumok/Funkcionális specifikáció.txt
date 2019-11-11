@@ -132,3 +132,13 @@ felületről tovább lehet menni a másik felületre.
 	A felhasználó külön listába menti a felhasználók által kijelölt zenéket.
  
 11. Fogalomszótár
+Streaming: Egyidejű, vagy azonnali adatfolyam, általában tömörített multimédiás információ interneten keresztül való kézbesítése, 
+amely a bináris számítógépes fájlformátumokhoz (például AVI) viszonyítva kevésbé célozza meg a videotartalom teljes hűségű visszaállítását, 
+elsősorban az azonnaliságra összpontosít.
+
+PHP: Szerveroldali script nyelv, ennek köszönhetően dinamikus weboldalakat lehet késziteni.
+
+Admin: Az átlagos felhasználónál több mindenhez fér hozzá.
+
+Webszerver: Egy kiszolgáló, mely elérhetővé teszi a helyileg (esetleg más kiszolgálón) tárolt weblapokat a HTTP protokollon keresztül. 
+A HTTP webszerverekhez webböngészőkkel lehet kapcsolódni.
