@@ -111,9 +111,24 @@ vagyunk az adatbázisban lévő összes zene lejátszására, illetve azokból k
 lejátszási listába tudjuk menteni. Illetve a sima felhasználó képes saját felhasználó adatai megváltoztatására is. Természetesen minden 
 felületről tovább lehet menni a másik felületre.
 
-
-
-
 10. Funkciók
-
+ 	f1:Lejátszó:
+	  k1,k8,k9 követelményeknek felel meg
+	Az alkalmazás lelke, ez játsza le a az adatbázisban lévő zenéket.
+	f2:Zene kezelés:
+	  k2,k8,k9 követelményeknek felel meg
+	Az alkamazás admin felhasználóval képes zenéket feltölteni a rendszerbe azok adatait módositani, ha kell, illetve törölni is.
+	f3:Jogkörök:
+	  k4,k5,k10 követelményeknek felel meg
+	Más funkciókhoz fér hozzá egy sima felhasználó mint az adminisztrátor.
+	f4:Regisztráció:
+	  k6,k8,k9,k10 követelményknek felel meg
+	Nem csak adminok tudnak felhasználót hozzáadni, hanem a leendő felhasználók is hozzátudják adni magukat a rendszerhez.
+	f5:Keresés:
+	  k3,k8,k9 követelménynek felel meg
+	Lehet keresni a feltöltött zenék között.
+	f6:Mentett zenék:
+	  k7,k8,k9 követelményeknek felel meg
+	A felhasználó külön listába menti a felhasználók által kijelölt zenéket.
+ 
 11. Fogalomszótár
