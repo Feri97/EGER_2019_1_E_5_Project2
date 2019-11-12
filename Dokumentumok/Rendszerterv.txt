@@ -1,0 +1,38 @@
+VI. Fizikai környezet.
+
+Kliens:
+
+	Eszköz1	
+
+		Eszköz:PC
+		
+		Operációs rendszer: Windows/Linux/IOS
+
+		Böngésző: Google Chrome/Edge/Firefox/Opera/Maxthon.
+
+		Konfiguráció: Nem specifikus.
+
+	Eszköz2
+
+		Eszköz: Okostelefon
+
+		Operációs rendszer: Android 4.0+
+
+		Böngésző: Google chrome/Firefox
+
+		Konfiguráció: Nem specifikus.
+
+
+Szerver:
+
+	Gyártmány/típus: Dell PowerEdge R430
+
+	Specifikáció: 2x E5-2620v4 8C/16T 2.1GHz, NoRAM, NoHDD(4x3.5"), H730/1GB, DVD-RW, 2x550W, iD8 Ent, 3y NBD
+
+	Operációs rendszer: Linux
+
+	Applikáció szerver: Apache
+
+	Komponensek: MySQL DB provider.
+	
+	
