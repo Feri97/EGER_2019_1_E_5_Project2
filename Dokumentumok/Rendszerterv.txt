@@ -137,3 +137,19 @@ Szerver:
 
 	Komponensek: MySQL DB provider.
 
+XIII. Karbantartási terv
+
+A szoftveren a későbbiekben nem kell nagyobb karbantartásokat elvégezni. Az esetleges karbantartások
+a következőből állhatnak:
+
+- Tesztelés frissebb veriójú böngészők használatával. Hiba észlelése esetén azok javítása
+
+- Tesztelés frissebb verziójú android használatával. Hiba észlelése esetén azok javítása
+
+- A kiszolgáló szerver státuszának ellenőrzése, offline szerver esetén újraindítás.
+
+- Igény esetén új funkciók hozzáadása
+ 
+- Igény esetén új zeneszámok hozzáadása.
+
+
