@@ -1,3 +1,12 @@
+I. A rendszer célja
+
+Rendszerünk célja, hogy a Követelmény és Funkcionális specifikációban meghatározott megrendelői folyamatok megvalósuljanak.
+Egy olyan online zenelejátszót szeretnénk létrehozni, ami használhatóságban, megjelenésben és funkcióit tekintve,a megrendelő
+kívánságainak eleget téve feltudja vennni a versenyt napjaink legjobb online zenelejátszó alkalmazásaival. A rendszert bárki
+elfogja tudni érni és az alkalmazás összes funkcióját kivétel nélkül minden felhasználó teljesen ingyen használhatja. Célunk, hogy
+a felhasználók kikapcsolódhassanak amikor használják a programot, ezért csak olyan reklámokat használunk amelyek nem szakítják meg
+a lejátszást. Emellett fontosnak tartjuk, hogy a lehető legtöbb zene elérhető legyen az oldalunkon, ezért lehetőség lesz zeneszámok feltöltésére is.
+
 VI. Fizikai környezet.
 
 Kliens:
