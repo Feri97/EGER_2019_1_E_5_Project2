@@ -18,6 +18,30 @@ II. Projektterv
 2019.11.04.-12.07.	Béta teszt
 2019.12.09.		Projekt átadása						A projektben résztvevő összes szereplő
 
+III. Üzleti folyamatok modellje
+
+Üzleti szereplõk:
+	-Felhasználó
+	-Admin
+
+Támogatandó üzleti folyamatok:
+	-Lejátszás
+	-Zenék feltöltése
+
+Üzleti folyamatok leírása:
+
+Lejátszás:
+Az oldalon letudjuk játszani a meglévő zenéket. Ehhez saját online lejátszót kell használni.
+
+Zenék feltöltése:
+Az admin(ok)nak lehetőségük lesz zenék és azok leírásának feltöltésére.
+
+-Modell:
+Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
+								-> Feltöltés
+		-> Ismertető
+		-> Elérhetőségek
+
 VI. Fizikai környezet.
 
 Kliens:
