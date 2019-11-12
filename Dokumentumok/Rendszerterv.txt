@@ -7,6 +7,17 @@ elfogja tudni érni és az alkalmazás összes funkcióját kivétel nélkül mi
 a felhasználók kikapcsolódhassanak amikor használják a programot, ezért csak olyan reklámokat használunk amelyek nem szakítják meg
 a lejátszást. Emellett fontosnak tartjuk, hogy a lehető legtöbb zene elérhető legyen az oldalunkon, ezért lehetőség lesz zeneszámok feltöltésére is.
 
+II. Projektterv
+
+	Dátum		Tevékenység						Résztvevő(k)
+	
+2019.10.17.-11.17.	Dokumentációk elkészítése és véglegesítése
+2019.11.24.		Fejlesztés megkezdése
+2019.11.24.-29.		Unit teszt
+2019.11.29.-12.03.	Alpha teszt
+2019.11.04.-12.07.	Béta teszt
+2019.12.09.		Projekt átadása						A projektben résztvevő összes szereplő
+
 VI. Fizikai környezet.
 
 Kliens:
