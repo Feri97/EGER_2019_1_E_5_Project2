@@ -57,6 +57,49 @@ IV. Követelmények
    Törvényi előírások:
 	- A hatályban lévő GDPR szabályozásnak meg kell felelnie.
 
+V. Funkcionális terv
+
+Rendszerszereplők:
+	-Felhasználó
+	-Admin
+
+Rendszer használati esetek és lefutásaik:
+
+	Felhasználó
+		-Zenék lejátszása
+		-Albumok megtekintése
+		-Személyes adatmódosítás
+		-Bejelentkezés
+		-Regisztráció
+	
+	Admin:
+		-Felhasználók adatainak módosítása
+		-Felhasználó törlése
+		-Zenék kezelése
+		-Adatbázisban lévő zenék lejátszása
+
+		
+	
+Menü hierarchiák:
+	Bejelentkezés
+		-Bejelentkezés
+		-Regisztráció
+		
+	Főmenü(felhasználó)
+		-Zenék
+		-Saját Zenék
+		-Feltöltött zenék
+		-Lejátszó
+
+	Főmenü(admin)
+		-Zenék
+		-Feltöltés
+		-Felhasználók kezelése
+		-Feltöltött zenék
+		-Lejátszó
+	
+	
+
 VI. Fizikai környezet.
 
 Kliens:
@@ -93,5 +136,4 @@ Szerver:
 	Applikáció szerver: Apache
 
 	Komponensek: MySQL DB provider.
-	
-	
+
