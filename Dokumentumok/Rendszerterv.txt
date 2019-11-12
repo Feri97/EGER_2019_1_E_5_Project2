@@ -42,6 +42,21 @@ Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
 		-> Ismertető
 		-> Elérhetőségek
 
+IV. Követelmények
+
+   Funkcionális követelmények:
+	- A regisztrált felhasználók adatainak tárolása a GDPR-nak megfelelően	
+	- Mind android, mind webes környezetben gördülékenyen kell működnie
+	- Android platformon minimális mobilinternet használat.
+ 
+   Nem funkcionális követelmények:
+	- Letisztult, egyszerű kinézet
+	- Pc és mobil eszközök támogatása	
+	- Android platformon minimális tárhely használat.
+
+   Törvényi előírások:
+	- A hatályban lévő GDPR szabályozásnak meg kell felelnie.
+
 VI. Fizikai környezet.
 
 Kliens:
