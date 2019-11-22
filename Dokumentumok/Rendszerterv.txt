@@ -11,7 +11,7 @@ II. Projektterv
 
 	Dátum		Tevékenység						Résztvevő(k)
 	
-2019.10.17.-11.17.	Dokumentációk elkészítése és véglegesítése
+2019.10.17.-11.22.	Dokumentációk elkészítése és véglegesítése
 2019.11.24.		Fejlesztés megkezdése
 2019.11.24.-29.		Unit teszt
 2019.11.29.-12.03.	Alpha teszt
@@ -148,6 +148,13 @@ IX. Adatbázis terv
  Saved_music tábla:
                Id(INT(55), Primary key); musicid(INT(55), Foreign Key Reference To Music); userid(INT(55), Foreign Key reference to User) A felhasználó kitudja választani a meglévő zenék közül, 
                a kedvenceket és ezek kapcsolatát tárolja a tábla.
+
+X. Implementációs terv
+
+A Webes felület főként HTML, CSS, és Javascript nyelven fog készülni. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni
+a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében. Az alkalmazás adatbázisát a PHP-alapú webes MySQL-kezelőfelülettel rendelkező phpMyAdmin-nal készítettük.
+Az eltelt időt a kliens fogja számolni a feladatoknál, hogy ne legyenek eltérések.
+
 
 
 
