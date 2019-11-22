@@ -151,7 +151,32 @@ IX. Adatbázis terv
 
 
 
-XII. 
+XI. Teszt terv
+
+ I. Alpha teszt:
+	Az alpha tesztet a fejlesztők végzik, amelyben a rendszer összeomlását próbálják elérni remélhetőleg sikertelenül. Amennyiben 
+	felderítenek egy hibát jelentést írnak róla, majd javítják.
+	Az alpha teszt során külön tesztelni kell a fontosabb funkciókat, mintpedig: Feladatok menedzselése, megoldása, jutalomrendszer, 
+	design letisztultsága. A teszt során a hibák csökkentése az elsődleges cél.
+ II. Béta teszt:
+	Az alpha tesztet követően a felhasználók elvégzik a béta tesztet, melynek során a programban maradt súlyosabb hibák felderítésre kerülnek, majd a fejlesztők javítják őket.
+	A teszt során a stabilitás, letisztultság növelése a cél.
+
+        (A tesztekről naplót kell készíteni, amely alapján esetleges hibáknál kitölthető a hibajelentő.)
+
+XII. Telepítési terv
+     
+ Fizika telepítési terv:
+
+	- Szükség van egy adatbázis szerverre, amely direktbe csatlakozik LAN-on a webszerverre, amelyen egy alkalmazásszerver fut.
+          A webszervert konfigurálni kell használat előtt, a zene tárolás és lejátszás miatt.
+      
+	- A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
+ 
+Szoftver telepítési terv:
+
+	- A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges
+  	  (Google Chrome, Firefox, Opera, Safari), külön szoftver nem kell hozzá.
 
 XIII. Karbantartási terv
 
