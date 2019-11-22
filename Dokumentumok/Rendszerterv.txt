@@ -137,6 +137,22 @@ Szerver:
 
 	Komponensek: MySQL DB provider.
 
+IX. Adatbázis terv
+
+ User tábla:
+		Id(INT(55), Primary key); Username(VARCHAR (16)); Password(VARCHAR (16)) hash-el kódolva; First_name(VARCHAR(45)); Last_name(VARCHAR(45)); Created_at(DATETIME) létrehozás dátuma; Last_login(DATETIME, nullable) utolsó belépés dátuma;
+		Felhasználói adatok eltárolására alkalmas.
+ Music tábla:
+               Id(INT(55), Primary key);  title(VARCHAR (255)); artist(VARCHAR (255)); album(VARCHAR (255)); type(VARCHAR (255)); data(mediumblob) Zenék tárolására alkalmas tábla.
+
+ Saved_music tábla:
+               Id(INT(55), Primary key); musicid(INT(55), Foreign Key Reference To Music); userid(INT(55), Foreign Key reference to User) A felhasználó kitudja választani a meglévő zenék közül, 
+               a kedvenceket és ezek kapcsolatát tárolja a tábla.
+
+
+
+XII. 
+
 XIII. Karbantartási terv
 
 A szoftveren a későbbiekben nem kell nagyobb karbantartásokat elvégezni. Az esetleges karbantartások
