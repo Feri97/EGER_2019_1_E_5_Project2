@@ -145,6 +145,10 @@ Az általános alany szerepkörét a bejelentkezés után a Jogosultság vizsgá
 Ez azt jelenti, hogy például a zene lejátszás hozzáférhetőek mindkét szerepkör számára, de az zenefeltöltés csak az admin felhasználónak érhető el, ahogy a felhasználó kezelés is.
 Az átlagos felhasználó viszont tud magának úgymond menteni számokat a saját gyüjteményébe.Ennek a működési módját az Oracle SQL-ből ismert View funkcióhoz hasonlóan kell elképzelni. 
 
+VIII. Architekturális terv
+
+archterv.png
+
 IX. Adatbázis terv
 
  User tábla:
