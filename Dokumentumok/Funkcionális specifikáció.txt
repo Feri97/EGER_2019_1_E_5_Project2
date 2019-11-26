@@ -1,0 +1,144 @@
+Funkcionális specifikáció
+
+1. Áttekintés
+Napjainkban nehéz olyan háztartást találni, ahol legalább egy streaming szolgáltattásra 
+-legyen szó zenével vagy filmmel/sorozattal foglalkozó- van előfizetés. 
+Előnyük, a eddigi fizikai és digitális terjesztésekkel szemben, hogy ezen előbb felsorolt 
+terjesztési formákból származó egy példány árából, többezer alkotáshoz
+lehet hozzáférni és ehez nem kell különleges lejátszó hardver, csak egy okostelefon vagy 
+egy számitógép és persze egy stabil internethozzáférés. Mi célunk,hogy a jelenlegi igényeket figyelembe véve, 
+egy mindenki számára elérhető online zenelejátszó fejlesztése.
+
+2. Jelenlegi helyzet
+A jelenlegi zenei streaming piac viszonylag eléggé telitett. A piac mostani nagy éllovasai: a spotify, 
+apple music, google play music, deezer több ezer zeneszámot biztosit elérésre. Persze nem ingyen érhetők el, 
+illetve a spotify-t lehet ingyenesen használni, bár ebben esetben eléggé funkciószegény szolgáltatás érhető el, plusz két zeneszám 
+között hangosreklámok helyezkednek el. Ezért a legtöbben előfizetéses (Premium) opciót választják -ami a többi szolgáltatónál 
+az alapvető igénybevételi feltétel- amivel teljes funkcióhoz való hozzáférés válik elérhetővé. Ezért a célunk egy olyan zenei streaming
+alkalmazás készitése ami, teljes funkcionalitású, de a többi streaminggel ellentétben ingyenes lenne.
+
+3. Vágyálomrendszer
+
+Először egy kezdő oldal fogadja a felhasználót, ahol el tudja olvasni, mi is az oldal célja és hogyan működik. Az "Contact us" fület választva, átirányít egy olyan lapra, ahol azok az elérhetőségeink találhatók(e-mail, telefon), amelyeken keresztül felvehetik a kapcsolatot a fejlesztőkkel, és az esetleges problémákat, észrevételeket közölhetik. A "Log in" füllel tudnak bejelentkezni a felhasználók, ha nincs még fiókjuk az itt megjelenő "Sign in"-re kattintva regisztrálhatnak. A bejelentkezést követően a feltöltött zenéket meghallgathatják, illetve új zenéket is feltölthetnek. Az adott audio fájl a hozzá tartozó adatok(előadó, album, megjelenési év, leírás) megadása nélkül nem feltölthető és ezeket az adatokat is ellenőrizzük, az esetleges hibák elkerülése végett.
+
+4. Jelenlegi üzleti folyamatok
+
+A jelenleg ismert zenehallgatásra alkalmas oldalak sokaknak megfelelőek, mégis számos kompromisszummal járnak, ugyanis a legtöbbjük  
+nem engedi a lezárt képernyővel történő zenehallgatást, illetve nem csak zenék feltöltésére szolgál, ennek köszönhetően a töltési idő is tovább tart. 
+
+A másik kompromisszum az, hogy reklámokkal bombázzák a felhasználókat így elkerülve azt, hogy fizetni kelljen a szolgáltatásokért. Ez egy régóta bevett szokás, mégis ugyanazt a reklámot végignézni újra és újra, egy idő után riasztó lehet. Ezért is tervezünk egy olyan weboldalt készíteni, amely nem zavarja a felhasználót és rontja el a szórakozását a kéretlen reklámokkal. 
+
+Mindezek mellett a szolgáltatás ingyenes, ami azzal jár, hogy reklámokkal kell finanszíroznunk, így hát az előbb elhangzottak alapján nem használunk olyan reklámokat melyek megszakítják a lejátszást, illetve videó vagy hang formában vannak. Különböző méretű, viszonylag kevés helyet foglaló reklám felületeket adunk majd ki, ezzel biztosítva a bevételt és azt, hogy a legkisebb mértékben zavarjuk a felhasználót szórakozásában. 
+
+
+5. Igényelt üzleti folyamatok
+
+A megrendelő véleménye az, hogy egy le egyszerűsített, csakis zene megosztására szolgáló weboldal nagyon sikeres lehet. Követelménye, hogy a reklámok ne zavarják a felhasználókat és a lehető legvisszafogottabbak legyenek.
+
+-Feltöltés:
+Fontos kritérium, hogy zenéket csak regisztrált felhasználók tölthessenek fel annak adataival. Az interneten fellelhető oldalakat információ szegénynek találja, ugyanis nem mindig kötelező megadni a zenével kapcsolatos adatokat. Ide tartozik az előadó neve, az album címe, a megjelenés éve és opcionálisan egy rövid leírás is. Illetve azt szeretné, hogy egy hibás próbálkozás után az adatlapról ne tűnjenek el az adatok, továbbá jelezzük hol keletkezett hiba és lehetőség szerint a miértjét is.
+
+-Lejátszás:
+Szüksége van egy saját online lejátszóra, hogy letöltés nélkül is meghallgathathatóak legyenek az adatbázisban szereplő zenék. Fontos, hogy könnyen kezelhető és intuitív legyen, a felhasználók dolgának megkönnyítése érdekében.
+
+-Modell:
+Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
+								-> Feltöltés
+		-> Ismertető
+		-> Elérhetőségek
+
+6. Követelménylista
+  6.1 Funkcionális Követelmények
+	K1:Lejátszó:
+	 	Alkalmazás egyik legfontosabb része, lehetőleg ne az alap html lejátszó legyen, hanem egy javascript/jquery alapokon nyugvó lejátszó legyen.
+	K2:Zenék kezelése:
+		Zenék feltöltése amiket le lehet majd játszani és azok törlése ha szükséges.
+	K3:Keresés:
+		Lehesessen keresni a feltöltött zenék között.
+	K4:Jogkörök:
+		Adminisztrátor és felhasználó jogköröket kell tartalmazmia.
+	K5:Felhasználók és Adminok jogkörei:
+		Adminisztrátor jogok:
+			Az admin képes zenéket feltölteni, azok adatait módositani, és törölni. Valamint képesek a felhasználókat kezelni.
+		Felhasználó jogok:
+			A sima felhasználó képes az adatbázisban lévő összes zeneszám lejátszására. Illetve képes bizonyos személyes adatok megváltoztatására.
+	K6:Regisztráció:
+		Ne csak az admin tudjon hozzáadni felhasználókat a rendszerhez.
+	K7:Mentett zenék:
+		Az alkalmazás képes legyen arra, hogy a felhasználók külön listába tudják tenni azokat a számokat amik nekik tetszenek.
+  6.2 Nem funkcionális követelmények
+	K8:Design:
+		Felhasználóbarát külső, amibe jól elkülönölnek a különböző elemek.
+	K9:Platform:
+		Alkalmazás futtatható legyen az összes aktuálisan elérhető böngészők aktuális verziójával.
+  6.3 Biztonsági követelmények
+	K10:Titkositás:
+		A felhasználók jelszavait titkositva kell tárolni.	
+				
+7. Képernyő terv
+
+8. Használati esetek
+ Hozzáférések jogultság szerint:
+	-sima felhasználó
+	-adminisztrátor
+
+ Sima felhasználó használati esetei:
+	-Regisztráció: A felhasználó képes önmagát beregisztrálni a rendszerbe.
+	-Bejelentkezés: Regisztráció után megnyilik a bejelentkezés lehtősége a rendszerbe.
+	-Zene lejátszás: Az adatbázisban lévő össze zenét képes lejátszani.
+	-Kedvencek kiválasztása: A felhasználó kiválaszthatja ,hogy mik azok a zeneszámok amik érdeklik őt és azokat egy külön oldalon láthatja.
+	-Felhasználói adatok módositása: A felhasznló megtudja változtatni néhány személyes adatát. Például jelszót.
+ 
+ Adminisztrátor használati esetei:
+	-Bejelentkezés: Az adminisztrátor képes bejelentkezni a rendszerbe.
+	-Zenék kezelése: Az adminisztrátor képes zenéket feltölteni az adatbázisba és ha kell törölni is azt.
+	-Felhasználók kezelése: Az admin képes a felhasználók kezelésére.
+	-Zene lejátszás: Az admin képes az adatbázisban lévő zenék lejátszására.
+
+9. Forgatókönyv
+Az alkalmazás webes felületü, ezért kell hozzá egy böngésző amivel megtudjuk nyitni, illetve kell egy webszerver is.
+Utóbbira azért van szükség mert az alkalmazás PHP oldalakból áll, amiknek a futtatásához webszerver szükséges, illetve 
+még ahoz is szükséges a webszerver, hogy tárolni tudjuk az alkalmazáshoz szükséges adatokat (bejelentkezéshez szükséges 
+felhasználói adatok,zenék és azok adatai). Elinditáskor egy Üdvözlőoldal fogad minket, ahonan lehet bejelentkezni a rendszerbe.
+Amint beirtuk a felhasználónevünket, jelszavunkat és rányomtunk a bejelntkezés gombra akkor a rendszer összeveti a rendszerben lévő
+felhasználókkal és az alapján, hogy milyen jogosultságuak -admin vagy sima felhasználó- irányitja a megfelelő oldalra. Ha a jelszó vagy
+a felhasználó nem jó, akkor azt az oldal kijelzi. Ha esetleg még nem vagyunk részese a rendszernek akkor lehetőségünk van regisztrációra, 
+ahol egy adatlapot kitöltve, máris felhasználói vagyunk a rendszernek.Admin bejelntkezés esetén képesek vagyunk a zenei adatbázis bővitésére, abból 
+való lejátszásra, illetve az eddig hozzáadott felhasználók kezelésére. Zene feltőltésnél csak az adott zeneszám adatait -szám cime,előadó, album- 
+illetve magát a zenefájlt tudjuk feltölteni mp3 formátumban.Zene lejátszásnál rákattintva az adott zeneszám cimére a zene betöltődik a lejátszóba és elindul. 
+Felhasználók kezelésénél pedig képesek vagyunk a felhasználók törlésére, illetve jogosultságuk módositására. Sima felhasználó esetén képesek 
+vagyunk az adatbázisban lévő összes zene lejátszására, illetve azokból kitudjuk választani azokat, amik tetszenek és azokat egy saját 
+lejátszási listába tudjuk menteni. Illetve a sima felhasználó képes saját felhasználó adatai megváltoztatására is. Természetesen minden 
+felületről tovább lehet menni a másik felületre.
+
+10. Funkciók
+ 	f1:Lejátszó:
+	  k1,k8,k9 követelményeknek felel meg
+	Az alkalmazás lelke, ez játsza le a az adatbázisban lévő zenéket.
+	f2:Zene kezelés:
+	  k2,k8,k9 követelményeknek felel meg
+	Az alkamazás admin felhasználóval képes zenéket feltölteni a rendszerbe azok adatait módositani, ha kell, illetve törölni is.
+	f3:Jogkörök:
+	  k4,k5,k10 követelményeknek felel meg
+	Más funkciókhoz fér hozzá egy sima felhasználó mint az adminisztrátor.
+	f4:Regisztráció:
+	  k6,k8,k9,k10 követelményknek felel meg
+	Nem csak adminok tudnak felhasználót hozzáadni, hanem a leendő felhasználók is hozzátudják adni magukat a rendszerhez.
+	f5:Keresés:
+	  k3,k8,k9 követelménynek felel meg
+	Lehet keresni a feltöltött zenék között.
+	f6:Mentett zenék:
+	  k7,k8,k9 követelményeknek felel meg
+	A felhasználó külön listába menti a felhasználók által kijelölt zenéket.
+ 
+11. Fogalomszótár
+Streaming: Egyidejű, vagy azonnali adatfolyam, általában tömörített multimédiás információ interneten keresztül való kézbesítése, 
+amely a bináris számítógépes fájlformátumokhoz (például AVI) viszonyítva kevésbé célozza meg a videotartalom teljes hűségű visszaállítását, 
+elsősorban az azonnaliságra összpontosít.
+
+PHP: Szerveroldali script nyelv, ennek köszönhetően dinamikus weboldalakat lehet késziteni.
+
+Admin: Az átlagos felhasználónál több mindenhez fér hozzá.
+
+Webszerver: Egy kiszolgáló, mely elérhetővé teszi a helyileg (esetleg más kiszolgálón) tárolt weblapokat a HTTP protokollon keresztül. 
+A HTTP webszerverekhez webböngészőkkel lehet kapcsolódni.

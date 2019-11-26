@@ -1,0 +1,215 @@
+I. A rendszer célja
+
+Rendszerünk célja, hogy a Követelmény és Funkcionális specifikációban meghatározott megrendelői folyamatok megvalósuljanak.
+Egy olyan online zenelejátszót szeretnénk létrehozni, ami használhatóságban, megjelenésben és funkcióit tekintve,a megrendelő
+kívánságainak eleget téve feltudja vennni a versenyt napjaink legjobb online zenelejátszó alkalmazásaival. A rendszert bárki
+elfogja tudni érni és az alkalmazás összes funkcióját kivétel nélkül minden felhasználó teljesen ingyen használhatja. Célunk, hogy
+a felhasználók kikapcsolódhassanak amikor használják a programot, ezért csak olyan reklámokat használunk amelyek nem szakítják meg
+a lejátszást. Emellett fontosnak tartjuk, hogy a lehető legtöbb zene elérhető legyen az oldalunkon, ezért lehetőség lesz zeneszámok feltöltésére is.
+
+II. Projektterv
+
+	Dátum		Tevékenység						Résztvevő(k)
+	
+2019.10.17.-11.22.	Dokumentációk elkészítése és véglegesítése
+2019.11.24.		Fejlesztés megkezdése
+2019.11.24.-29.		Unit teszt
+2019.11.29.-12.03.	Alpha teszt
+2019.11.04.-12.07.	Béta teszt
+2019.12.09.		Projekt átadása						A projektben résztvevő összes szereplő
+
+III. Üzleti folyamatok modellje
+
+Üzleti szereplõk:
+	-Felhasználó
+	-Admin
+
+Támogatandó üzleti folyamatok:
+	-Lejátszás
+	-Zenék feltöltése
+
+Üzleti folyamatok leírása:
+
+Lejátszás:
+Az oldalon letudjuk játszani a meglévő zenéket. Ehhez saját online lejátszót kell használni.
+
+Zenék feltöltése:
+Az admin(ok)nak lehetőségük lesz zenék és azok leírásának feltöltésére.
+
+-Modell:
+Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
+								-> Feltöltés
+		-> Ismertető
+		-> Elérhetőségek
+
+IV. Követelmények
+
+   Funkcionális követelmények:
+	- A regisztrált felhasználók adatainak tárolása a GDPR-nak megfelelően	
+	- Mind android, mind webes környezetben gördülékenyen kell működnie
+	- Android platformon minimális mobilinternet használat.
+ 
+   Nem funkcionális követelmények:
+	- Letisztult, egyszerű kinézet
+	- Pc és mobil eszközök támogatása	
+	- Android platformon minimális tárhely használat.
+
+   Törvényi előírások:
+	- A hatályban lévő GDPR szabályozásnak meg kell felelnie.
+
+V. Funkcionális terv
+
+Rendszerszereplők:
+	-Felhasználó
+	-Admin
+
+Rendszer használati esetek és lefutásaik:
+
+	Felhasználó
+		-Zenék lejátszása
+		-Albumok megtekintése
+		-Személyes adatmódosítás
+		-Bejelentkezés
+		-Regisztráció
+	
+	Admin:
+		-Felhasználók adatainak módosítása
+		-Felhasználó törlése
+		-Zenék kezelése
+		-Adatbázisban lévő zenék lejátszása
+
+		
+	
+Menü hierarchiák:
+	Bejelentkezés
+		-Bejelentkezés
+		-Regisztráció
+		
+	Főmenü(felhasználó)
+		-Zenék
+		-Saját Zenék
+		-Feltöltött zenék
+		-Lejátszó
+
+	Főmenü(admin)
+		-Zenék
+		-Feltöltés
+		-Felhasználók kezelése
+		-Feltöltött zenék
+		-Lejátszó
+	
+	
+
+VI. Fizikai környezet.
+
+Kliens:
+
+	Eszköz1	
+
+		Eszköz:PC
+		
+		Operációs rendszer: Windows/Linux/IOS
+
+		Böngésző: Google Chrome/Edge/Firefox/Opera/Maxthon.
+
+		Konfiguráció: Nem specifikus.
+
+	Eszköz2
+
+		Eszköz: Okostelefon
+
+		Operációs rendszer: Android 4.0+
+
+		Böngésző: Google chrome/Firefox
+
+		Konfiguráció: Nem specifikus.
+
+
+Szerver:
+
+	Gyártmány/típus: Dell PowerEdge R430
+
+	Specifikáció: 2x E5-2620v4 8C/16T 2.1GHz, NoRAM, NoHDD(4x3.5"), H730/1GB, DVD-RW, 2x550W, iD8 Ent, 3y NBD
+
+	Operációs rendszer: Linux
+
+	Applikáció szerver: Apache
+
+	Komponensek: MySQL DB provider.
+
+VII. Absztrakt modell
+
+A program működése során a felhasználó kétféle szerepkörben szerepelhet: Átlagos vagy admin felhasználó. Ennek megfelelően kap az alany funkciókat, 
+amelyek a szerepkörökhöz kizárólagosan vagy nem kizárólagosan kapcsolódnak: azaz vagy csak ő fér hozzá, vagy mindketten a saját oldalukról.
+Az általános alany szerepkörét a bejelentkezés után a Jogosultság vizsgálata dönti el. Ezen a szinten még csak logikai elkülönítés történik a funkciók elérésében, nem valódi. 
+Ez azt jelenti, hogy például a zene lejátszás hozzáférhetőek mindkét szerepkör számára, de az zenefeltöltés csak az admin felhasználónak érhető el, ahogy a felhasználó kezelés is.
+Az átlagos felhasználó viszont tud magának úgymond menteni számokat a saját gyüjteményébe.Ennek a működési módját az Oracle SQL-ből ismert View funkcióhoz hasonlóan kell elképzelni. 
+
+VIII. Architekturális terv
+
+archterv.png
+
+IX. Adatbázis terv
+
+ User tábla:
+		Id(INT(55), Primary key); Username(VARCHAR (16)); Password(VARCHAR (16)) hash-el kódolva; First_name(VARCHAR(45)); Last_name(VARCHAR(45)); Created_at(DATETIME) létrehozás dátuma; Last_login(DATETIME, nullable) utolsó belépés dátuma;
+		Felhasználói adatok eltárolására alkalmas.
+ Music tábla:
+               Id(INT(55), Primary key);  title(VARCHAR (255)); artist(VARCHAR (255)); album(VARCHAR (255)); type(VARCHAR (255)); data(mediumblob) Zenék tárolására alkalmas tábla.
+
+ Saved_music tábla:
+               Id(INT(55), Primary key); musicid(INT(55), Foreign Key Reference To Music); userid(INT(55), Foreign Key reference to User) A felhasználó kitudja választani a meglévő zenék közül, 
+               a kedvenceket és ezek kapcsolatát tárolja a tábla.
+
+X. Implementációs terv
+
+A Webes felület főként HTML, CSS, és Javascript nyelven fog készülni. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni
+a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében. Az alkalmazás adatbázisát a PHP-alapú webes MySQL-kezelőfelülettel rendelkező phpMyAdmin-nal készítettük.
+Az eltelt időt a kliens fogja számolni a feladatoknál, hogy ne legyenek eltérések.
+
+
+
+
+XI. Teszt terv
+
+ I. Alpha teszt:
+	Az alpha tesztet a fejlesztők végzik, amelyben a rendszer összeomlását próbálják elérni remélhetőleg sikertelenül. Amennyiben 
+	felderítenek egy hibát jelentést írnak róla, majd javítják.
+	Az alpha teszt során külön tesztelni kell a fontosabb funkciókat, mintpedig: Feladatok menedzselése, megoldása, jutalomrendszer, 
+	design letisztultsága. A teszt során a hibák csökkentése az elsődleges cél.
+ II. Béta teszt:
+	Az alpha tesztet követően a felhasználók elvégzik a béta tesztet, melynek során a programban maradt súlyosabb hibák felderítésre kerülnek, majd a fejlesztők javítják őket.
+	A teszt során a stabilitás, letisztultság növelése a cél.
+
+        (A tesztekről naplót kell készíteni, amely alapján esetleges hibáknál kitölthető a hibajelentő.)
+
+XII. Telepítési terv
+     
+ Fizika telepítési terv:
+
+	- Szükség van egy adatbázis szerverre, amely direktbe csatlakozik LAN-on a webszerverre, amelyen egy alkalmazásszerver fut.
+          A webszervert konfigurálni kell használat előtt, a zene tárolás és lejátszás miatt.
+      
+	- A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
+ 
+Szoftver telepítési terv:
+
+	- A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges
+  	  (Google Chrome, Firefox, Opera, Safari), külön szoftver nem kell hozzá.
+
+XIII. Karbantartási terv
+
+A szoftveren a későbbiekben nem kell nagyobb karbantartásokat elvégezni. Az esetleges karbantartások
+a következőből állhatnak:
+
+- Tesztelés frissebb veriójú böngészők használatával. Hiba észlelése esetén azok javítása
+
+- Tesztelés frissebb verziójú android használatával. Hiba észlelése esetén azok javítása
+
+- A kiszolgáló szerver státuszának ellenőrzése, offline szerver esetén újraindítás.
+
+- Igény esetén új funkciók hozzáadása
+ 
+- Igény esetén új zeneszámok hozzáadása.
+
+
