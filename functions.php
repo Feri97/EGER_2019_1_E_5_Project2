@@ -81,5 +81,39 @@ function get_album_list()
     return $result;
 }
 
+function get_album_by_id($id)
+{
+    global $db;
+
+    $sql = $db->prepare("SELECT * FROM albums WHERE id = ?");
+    $sql->bind_param('i', $id);
+    $sql->execute();
+
+    $result = $sql->get_result();
+    $sql->close();
+
+    if ($result->num_rows != 1) {
+        return null;
+    }
+
+    return $result->fetch_assoc();
+}
+
+function select_music_col($id){
+    global $db;
+
+    $sql = $db->prepare("SELECT * FROM `musics` WHERE id = ?");
+    $sql->bind_param('i', $id);
+    $sql->execute();
+
+    $result = $sql->get_result();
+    $sql->close();
+
+    if ($result->num_rows != 1) {
+        return null;
+    }
+
+    return $result->fetch_assoc();
+}
 
 ?>
