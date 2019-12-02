@@ -59,4 +59,12 @@ function db_connect()
     return $conn;
 }
 
+function db_close()
+{
+    global $db;
+
+    $db->close();
+}
+
+
 ?>
