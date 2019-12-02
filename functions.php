@@ -150,4 +150,31 @@ function select_music_by_name($name){
     return $result->fetch_assoc();
 }
 
+function select_album_col($id){
+    global $db;
+
+    $sql = $db->prepare("SELECT * FROM `albums` WHERE id = ?");
+    $sql->bind_param('i', $id);
+    $sql->execute();
+
+    $result = $sql->get_result();
+    $sql->close();
+
+    if ($result->num_rows != 1) {
+        return null;
+    }
+
+    return $result->fetch_assoc();
+}
+
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
 ?>
