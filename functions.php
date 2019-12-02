@@ -116,4 +116,38 @@ function select_music_col($id){
     return $result->fetch_assoc();
 }
 
+function select_music_by_album($id){
+    global $db;
+
+    $sql = $db->prepare("SELECT * FROM `musics` WHERE album_id = ?");
+    $sql->bind_param('i', $id);
+    $sql->execute();
+
+    $result = $sql->get_result();
+    $sql->close();
+
+    if ($result->num_rows <= 0) {
+        return null;
+    }
+
+    return $result->fetch_assoc();
+}
+
+function select_music_by_name($name){
+    global $db;
+
+    $sql = $db->prepare("SELECT * FROM `musics` WHERE `name` = ?");
+    $sql->bind_param('s', $name);
+    $sql->execute();
+
+    $result = $sql->get_result();
+    $sql->close();
+
+    if ($result->num_rows != 1) {
+        return null;
+    }
+
+    return $result->fetch_assoc();
+}
+
 ?>
