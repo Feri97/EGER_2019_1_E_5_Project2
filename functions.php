@@ -66,5 +66,20 @@ function db_close()
     $db->close();
 }
 
+function get_album_list()
+{
+    global $db;
+
+    $sql = $db->prepare("SELECT * FROM albums");
+    $sql->execute();
+
+
+    $result = $sql->get_result();
+
+    $sql->close();
+
+    return $result;
+}
+
 
 ?>
