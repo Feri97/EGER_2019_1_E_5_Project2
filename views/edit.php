@@ -141,8 +141,34 @@ if (count($errors) == 0) {
             <button class="btn" type="submit" name="save">Save</button>
         </div>
 </form>
+?php 
+$query3 = "SELECT * FROM musics WHERE album_id=:albumid " ;
+$params3 = [':albumid' => $_GET['id']];
+$records3 = getList($query3, $params3);
 
-</div>
+?>
+
+
+
+
+<?php if($records3 != null && !empty($records3)): ?>
+    <table class='delete' id="delete">
+      <th><h1>Delete from album</h1></th>
+        <?php foreach ($records3 as $record): ?>
+            <tr class="border_bottom">
+            <td><?php echo $record['name'] ;?>
+            </td>
+            <td ><a href="<?php echo url('delete', ['d' => $record['id'], 'ad'=> $album['id']]);?>"><i class="fa fa-trash"></i></a>
+            </td>
+            </tr>
+        <?php endforeach; ?>
+        
+    <?php else: ?>
+        <th><h1>Album is empty</h1></th>
+ <?php endif; ?>
+    </table>
+
+ </div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
