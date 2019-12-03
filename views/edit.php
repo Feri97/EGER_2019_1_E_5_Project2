@@ -1,4 +1,62 @@
 <?php if (!defined('APP_VERSION')) { exit; } ?>
+<?php
+
+if (!isset($_GET['id'])) {
+    redirect('404');
+}
+
+$id = $_GET['id'];
+$album = get_album_by_id($id);
+
+if ($album == null) {
+    redirect('404');
+}
+$errors=[];
+if (is_post()){
+    $title = $_POST['title'];
+    $year = $_POST['year'];
+    $artist = $_POST['artist'];
+    $max_string_length = 255;
+    //dd($title);
+    if ($title == null){
+        $title = select_album_col($id)['title'];
+    }else{
+        if(strlen($title) <= 2 || $max_string_length < strlen($title)){
+            $errors['title'][] = "Album title must be between 3 and 255";
+        }
+    }
+
+    if ($artist == null){
+        $artist = select_album_col($id)['artist'];
+    }else{
+        if(strlen($artist) <= 2 || $max_string_length < strlen($artist)){
+            $errors['artist'][] = "Artist name must be between 3 than 255";
+        }
+    }
+
+    if ($year == null){
+        $year = select_album_col($id)['year'];
+    } else{
+        if(!is_numeric($year)){
+            $errors['year'][] = "Year must be a number";
+        }
+        else{
+            $curr_year = date('Y');
+            if ($curr_year < $year || $year < 1900){
+                $errors['year'][] = "Invalid year (must be between 1900-$curr_year)";
+            }
+        }
+    }
+if (count($errors) == 0) {
+    $sql = $db->prepare("UPDATE `albums` SET `artist`='$artist',`year`= '$year',`title`='$title' WHERE `id`='$id'");
+    $sql->execute();
+    $sql->close();
+    
+    redirect('edit', ['id' => $id, 'success' => 1] );
+}
+}
+//dd($album);
+?>
 <?php include "_header.php"; ?>
 <div class="page table">
     <table><td><tr>
