@@ -21,5 +21,23 @@ function getRecord($queryString, $queryParams = []){
     return $result;
 }
 
+function executeDML($queryString, $queryParams = []){
+    $connection = getConnection();  
+    $statement = $connection->prepare($queryString);
+    $success = $statement->execute($queryParams);
+    $statement->closeCursor();
+    $connection = null;
+    return $success;
+}
+function getNewId(){
+    $connection = getConnection();  
+    if(null == $connection->lastInsertId()){
+        $connection = null;
+        return 1;
+    }
+    $newid = $connection->lastInsertId() + 1;
+    $connection = null;
+    return $newid;
+}
 
 ?>
