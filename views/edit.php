@@ -96,6 +96,18 @@ if (count($errors) == 0) {
         </div>
     </form>
     
+ <form id="music-upload" action="<?php echo url('upload-music', ['id' => $album['id']]);?>" method="POST" enctype="multipart/form-data">
+        <div id="upload-response"></div>
+        <div class="form-group">
+            <label for="music">Music file</label>
+            <input type="file" name="audiofile">
+        </div>
+        <div>
+        <button class="btn" type="submit">Upload</button>
+        </div>
+    </form>
+
+    
     <form action="<?php echo url('edit', ['id' => $id]); ?>" method="POST">
     
     <div class="form-group<?php echo isset($errors['artist'])?" has-error":"" ?>">
