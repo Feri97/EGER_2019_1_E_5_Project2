@@ -32,3 +32,17 @@ document
                     enableInputs(inputs)
                 })
         })
+
+
+        function disableInputs(inputs) {
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].disabled = true
+            }
+        }
+        
+        function enableInputs(inputs) {
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].disabled = false
+            }
+        }
+        
