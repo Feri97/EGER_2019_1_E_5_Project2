@@ -1,5 +1,10 @@
 <?php if(!defined('APP_VERSION')){exit;}?>
 <?php    
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        redirect('login');
+        exit;
+    }
+    
     $albums = get_album_list();
 ?>
 <?php include_once "_header.php";?>
