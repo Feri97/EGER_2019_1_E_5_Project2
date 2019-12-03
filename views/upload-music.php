@@ -41,5 +41,36 @@ if (!in_array($_FILES['audiofile']['type'], $allowedFormats)) {
 if (select_music_by_name($_FILES['audiofile']['name'])['name'] == $_FILES['audiofile']['name']) {
     $errors[] = "The selected file already exists.";
 }
+if (count($errors) > 0) {
+    http_response_code(400);
+    die(json_encode([
+        "errors" => $errors
+    ]));
+} else {
+    $name=$_FILES['audiofile']['name'];
+    $type=$_FILES['audiofile']['type'];
+    $data=file_get_contents($_FILES['audiofile']['tmp_name']);
+    
+    $query="INSERT INTO `musics` (name,type,data,album_id) VALUES(:name,:type,:data,:album_id)";
+    $params=[
+        
+        ':name'=>$name,
+        ':type'=>$type,
+        ':data'=>$data,
+        ':album_id'=>$id
+      
+    ];
+
+    $success = executeDML($query, $params);
+   
+    $response_array = [
+        'filename' => $_FILES['audiofile']['name'],
+        'message' => 'Audio file uploaded successfully'
+    ];
+    http_response_code(200);
+    die(json_encode($response_array));
+    
+}
+
 
 ?>
