@@ -68,3 +68,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $mysqli->close();
 }
 ?>
+
+<?php include_once "_header.php";?>
+    <div class="page page-resetpass">
+        <h1>Reset Password</h1>
+        <h2>Please fill out this form to reset your password.</h2>
+        <form action="<?php echo url('reset-password') ?>" method="post"> 
+            <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
+                <label>New Password</label>
+                <input type="password" name="new_password" class="form-input" value="<?php echo $new_password; ?>">
+                <span class="input-error"><?php echo $new_password_err; ?></span>
+            </div>
+            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                <label>Confirm Password</label>
+                <input type="password" name="confirm_password" class="form-input">
+                <span class="input-error"><?php echo $confirm_password_err; ?></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="Submit">
+                <a class="btn" href="<?php echo url(); ?>">Cancel</a>
+            </div>
+        </form>
+    </div>    
+    <?php include_once "_header.php";?>
