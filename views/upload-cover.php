@@ -50,4 +50,48 @@ if ($check === false) {
 if (file_exists($target_file)) {
     $errors[] = "The selected file already exists.";
 }
+
+//NOTE: fájl méret
+if ($_FILES['image']['size'] > (MAX_UPLOAD_SIZE * 1000000)) {
+    $errors[] = "The seleceted file is too large.";
+}
+
+//NOTE: kiterjesztés
+$allowedFormats = [ "jpg", "png", "jpeg", "gif" ];
+
+if (!in_array($imageFileType, $allowedFormats)) {
+    $errors[] = "The selected file format is not allowed. Try one of these: " . implode(", ", $allowedFormats);
+}
+
+if (count($errors) > 0) {
+    http_response_code(400);
+    die(json_encode([
+        "errors" => $errors
+    ]));
+} else {
+    if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
+        if(select_album_col($id)['cover'] != null){
+            unlink("img/uploads/" .select_album_col($id)['cover']);
+        }
+        $sql = $db->prepare("UPDATE albums SET cover=? WHERE id=?");
+        //NOTE: saving image name in cover column
+        $sql->bind_param("si", $_FILES['image']['name'], $id);
+        $sql->execute();
+        $sql->close();
+
+        db_close();
+
+        $response_array = [
+            "image_url" => asset("img/uploads/" . $_FILES['image']['name']),
+            'message' => 'Image uploaded successfully'
+        ];
+        http_response_code(200);
+        die(json_encode($response_array));
+    } else {
+        http_response_code(500);
+        die(json_encode([ "errors" => "Something happend." ]));
+    }
+}
+
+
 ?>
