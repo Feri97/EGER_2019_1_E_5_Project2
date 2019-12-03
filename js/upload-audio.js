@@ -12,8 +12,23 @@ document
             document.getElementById("upload-response").innerHTML = ""
 
             axios.post(form.action, formData)
-                .then(function (response) {})
-                .catch(function (error) {}).finally(function () {
+                .then(function (response) {
+                    let successHTML = `
+                        <div class="success">
+                            <p>${response.data.message}</p>
+                            <p>${response.data.filename}</p>
+                        </div>
+                    `
+                    document.getElementById("upload-response").innerHTML = successHTML
+                })
+                .catch(function (error) {
+                    let errorHTML = ""
+                    const errorMessages = error.response.data.errors
+                    for(let i = 0; i < errorMessages.length; i++) {
+                        errorHTML += `<p class="form-error">${errorMessages[i]}</p>`
+                    }
+                    document.getElementById("upload-response").innerHTML = errorHTML
+                }).finally(function () {
                     enableInputs(inputs)
                 })
         })
