@@ -21,5 +21,25 @@ if ($album == null) {
     die(json_encode([ 'errors' => ['Album not found'] ]));
 }
 
+$errors = [];
+
+if (!isset($_FILES['audiofile']['name']) || $_FILES['audiofile']['size'] <= 0) {
+    db_close();
+    http_response_code(400);
+    $response_array = [
+        'errors' => [ 'Audio file is required.' ]
+    ];
+    $response = json_encode($response_array);
+    die($response);
+}
+
+$allowedFormats = [ "audio/mp3" ];
+
+if (!in_array($_FILES['audiofile']['type'], $allowedFormats)) {
+    $errors[] = "The selected file format is not allowed. Try one of these: " . implode(", ", $allowedFormats);
+}
+if (select_music_by_name($_FILES['audiofile']['name'])['name'] == $_FILES['audiofile']['name']) {
+    $errors[] = "The selected file already exists.";
+}
 
 ?>
