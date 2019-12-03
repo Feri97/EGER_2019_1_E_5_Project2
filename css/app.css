@@ -148,3 +148,85 @@ main {
     border: 1px solid #454545;
     border-radius: 5px;
 }
+
+.form-group textarea.form-input{
+    resize: vertical;
+}
+
+#upload-response p{
+    text-align: center;
+    color: tomato;
+}
+
+#upload-response .success p{
+    text-align: center;
+    color: #009999;
+}
+
+.form-group.has-error label {
+    color: tomato;
+}
+.form-group.has-error .form-input {
+    color: tomato;
+    border-color: tomato;
+}
+.form-group .input-error {
+    color: tomato;
+    margin-top: 10px;
+    font-size: 8m;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #009999;
+    color: #ebebeb;
+}
+
+.btn:hover{
+    opacity: .9;
+}
+
+/* Dropdown Button */
+header nav ul li .dropbtn {
+    background: transparent;
+    font-size: 18px;
+    color: #ebebeb;
+    border: none;
+  }
+  
+  header nav ul li .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    overflow:auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  header nav ul li .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #454545;
+  }
+  
+  header nav ul li .dropdown-content a:hover {
+    color: #009999;
+  }
+  
+  header nav ul li .dropdown:hover .dropdown-content {
+    display: block;}
+  
+  header nav ul li .dropdown:hover .dropbtn {
+    color: #009999;
+  }
+/*-------------*/
