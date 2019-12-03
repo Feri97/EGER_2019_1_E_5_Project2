@@ -21,7 +21,14 @@ document
                     `
                     document.getElementById("upload-response").innerHTML = successHTML
                 })
-                .catch(function (error) {}).finally(function () {
+                .catch(function (error) {
+                    let errorHTML = ""
+                    const errorMessages = error.response.data.errors
+                    for(let i = 0; i < errorMessages.length; i++) {
+                        errorHTML += `<p class="form-error">${errorMessages[i]}</p>`
+                    }
+                    document.getElementById("upload-response").innerHTML = errorHTML
+                }).finally(function () {
                     enableInputs(inputs)
                 })
         })
