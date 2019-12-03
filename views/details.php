@@ -228,3 +228,5 @@ console.log(isshuffle);
 
 //]]>
 </script>
+
+</div><?php include_once "_footer.php";?>
