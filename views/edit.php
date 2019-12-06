@@ -62,10 +62,10 @@ if (count($errors) == 0) {
     <table><td><tr>
     
     <?php if($album['cover']) : ?>
-        <img src="<?= asset("img/uploads/{$album['cover']}"); ?>" alt="<?php echo $album['title']; ?>" onload="resizeImg(this, 300, 300);">
+        <img src="<?= asset("img/uploads/{$album['cover']}"); ?>" alt="<?php echo $album['title']; ?>" width="350" height="350">
     <?php else : ?>
-        <img src="https://via.placeholder.com/300" alt="<?php echo $album['title']; ?>">
-	<?php endif; ?>
+        <img src="<?= asset("image/placeholder.gif"); ?>" alt="<?php echo $album['title']; ?>" width="350" height="350">
+    <?php endif; ?>
 	<h1> Edit album - <?php echo $album['title']; ?></h1>
     
     </tr></td><td><tr>
