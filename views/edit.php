@@ -8,6 +8,10 @@ if (!isset($_GET['id'])) {
 $id = $_GET['id'];
 $album = get_album_by_id($id);
 
+if($_SESSION["id"] != $album['user_id']){
+    redirect('details', ['id' => $album['id']]);
+}
+
 if ($album == null) {
     redirect('404');
 }
