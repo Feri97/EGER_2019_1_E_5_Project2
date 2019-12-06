@@ -68,9 +68,9 @@ function convert($type,$data){
 <div class="page page-details">
     <table><td><tr>
     <?php if($album['cover']) : ?>
-        <img src="<?= asset("img/uploads/{$album['cover']}"); ?>" alt="<?php echo $album['title']; ?>">
+        <img src="<?= asset("img/uploads/{$album['cover']}"); ?>" alt="<?php echo $album['title']; ?>" width="350" height="350">
     <?php else : ?>
-        <img src="https://via.placeholder.com/300" alt="<?php echo $album['title']; ?>">
+        <img src="<?= asset("image/placeholder.gif"); ?>" alt="<?php echo $album['title']; ?>" width="350" height="350">
     <?php endif; ?>
     <h1> <?php echo $album['artist']; ?> - <?php echo $album['title']; ?></h1>
     </tr></td><td>
