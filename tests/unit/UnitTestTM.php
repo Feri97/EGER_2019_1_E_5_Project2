@@ -18,6 +18,15 @@ class TestFunctions extends TestCase{
        
     }
 
+
+
+    public function test_asset(){
+        $variable='css/app.css';
+        $expected ='http://localhost/PROJECTPLAYER/css/app.css';
+        $htmlTest = new FunctionToTest();
+        $this->assertSame($expected,$htmlTest->asset($variable));
+    }
+
  }
 
 class FunctionToTest{
