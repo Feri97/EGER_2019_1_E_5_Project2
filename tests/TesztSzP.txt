@@ -1,0 +1,23 @@
+Teszt jegyzõkönyv.
+
+A teszt a következõ platform használatával lett elvégezve:
+
+Böngészõ: Mozilla Firefox 71.0
+
+Operációs rendszer: Windows 10
+
+Kezdõlap: 
+
+	A kezdõlapon minden elem normálisan betöltõdik. A Contact és About us gombra kattintva átirányít minket a megfelelõ oldalra.
+	Ha rávisszük az egeret a fogaskerékre, a legördülõ menü mutatja nekünk a login-t és a sign-up-ot.
+
+Bejelentkezés: 
+
+	A bejelentkezéshez szükséges egy felhasználónév és egy jelszó. Rossz bejelentkezési adatok beírása esetén természetesen nem enged tovább az alkalmazás
+	Csak sikeres bejelentkezést követõen érhetjük el a lejátszót. A kijelentkezés gombra kattintva átirányít minket a bejelentkezés oldalra
+
+Lejátszó:
+	
+	
+	A lejátszó albumonként elérhetõ. A lejátszó és annak minden eleme(Következõ/elõzõ szám, hangerõ állítás, lejátszás/pause, némítás) megfelelõen mûködik.
+	Minden albumba a csak oda tartozó zenék találhatóak meg.
