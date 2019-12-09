@@ -80,6 +80,7 @@ function convert($type,$data){
         <tr><a href="<?php echo url('edit', ['id' => $album['id']]); ?>" style="font-size:20px;" alt="Edit album"><i class="fa fa-cog"></i></a>
         </tr>
         <?php endif; ?>
+        <!--JPlayer Developed by Happyworm, jPlayer is Free, Open Source and licensed under the MIT license.-->
     </td></table>
 </div>
 <div class="player">
