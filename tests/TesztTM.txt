@@ -1,0 +1,26 @@
+Teszt jegyzőkönyv 
+
+Tesztelési platform: Windows 10 /Google Chrome Ver:77.0.3865.90 (Hivatalos verzió) (64 bites) Apache:Apache/2.4.41 (Win64) OpenSSL/1.1.1c
+PHP:PHP/7.3.11 MySql:mysqlnd 5.0.12
+
+1. Teszt bejelentkezés/kijelentkezés:
+ Az alkalmazás megnyitása során egy kezdő oldalt kapunk amiben minden elem rendesen betöltődött. Itt rámegyek a fogaskerék ikonra ahol található a login menüpont.
+ Rámegyek a login-ra, és bejön a login oldal. Az azonosítás jelszóval és felhasználónév megadásával történik, ha ezek megfelelnek az adatbázisban lévőkkel, akkor 
+ tovább lép a főoldalra ami meg is történik. Kijelentkezés tesztelése következik. Amint arra rákattintunk, akkor átirányít a bejelentkező oldalra. Most megpróbálok
+ rossz felhasználónévvel bejelentkezni. A rendszer jelzi, hogy a megadott felhasználónév nem szerepel az adatbázisban és nem enged tovább.
+
+
+2. Teszt hozzáférhetőség
+ Tesztelem azt hogy alkamazás különböző moduljaihoz hozzátudok férni anélkül, hogy bejelenkeztem volna. Az alkalmazás nem jeleníti meg az adott mudult, helyette átirányit
+ a 404 oldalra.
+
+
+
+3. Teszt lejátszó
+
+ Következő a lejátszó tesztje következik. Lejátszók minden albumhoz külön érhetők el. Rákattintok egy albumra, az albumbam csak az odatartozó zenék találhatóak.
+ Zenék az adatbázisban találhatóak BLOB formátumban, onnan tölti be a rendszer és kovertálja azt megfelelő formátumra. Rákattintok a lejátszási listán lévő zenére, 
+ zene elindul. Hangerő szabályozás, némítás működik, előre és hátralépés szintúgy.
+
+
+ 
