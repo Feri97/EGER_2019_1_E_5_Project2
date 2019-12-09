@@ -1,0 +1,21 @@
+Tesztelt böngészők: Opera, Vivaldi - legújabb verziók
+
+Kép feltöltés:
+	-Nem kép fájlok is feltölthetők. *javítva
+	-Már feltöltött fájlok újra feltölthetőek. *javítva
+	-Az új képet feltöltve nem törlődik a régi. *javítva
+
+Zene feltöltés:
+	-Nem audio fájlok is feltölthetők. *javítva
+	-Már feltöltött fájlok újra feltölthetőek. *javítva
+	-Id mezőn auto increment nem működik. *javítva
+
+Album szerkesztés:
+	-Albumot bármelyik felhasználó szerkesztheti. *javítva
+	-Kép és zenefeltöltés közül csak az egyik működik. *javítva
+
+Regisztráció:
+	-Email ellenőrzése és tárolása nem működik(undefined variable). *javítva
+	-Hibás kitöltés és post esetén adatok visszaírása változókból. *javítva
+
+2019.12.09.
