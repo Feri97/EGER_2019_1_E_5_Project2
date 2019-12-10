@@ -1,0 +1,7 @@
+Teszt esetek és azonosítók
+
+reg_rossz - Regisztráció hibás adatokkal
+reg_helyes - Regisztráció helyes adatokkal
+
+zene_rossz - Nem megfelelő fájl feltöltése
+zene_helyes - Megfelelő fájl feltöltése

@@ -1,0 +1,6 @@
+Teszt eset		|Dátum		|Eredmény	|Megjegyzés
+---------------------------------------------------------------------
+reg_rossz		|		|		|
+reg_helyes		|		|		|
+zene_rossz		|		|		|
+zene_helyes		|		|		|
