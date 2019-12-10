@@ -12,7 +12,7 @@
 <h1>Home</h1>
 <?php if ($albums->num_rows <= 0) : ?>
     <div class="alert alert-warning">
-        Nincs megjelenítendő album.
+        There is no album yet.
     </div>
 <?php else : ?>
     <div class="album-list">
