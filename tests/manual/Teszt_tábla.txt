@@ -1,6 +1,8 @@
 Teszt eset		|Dátum		|Eredmény	|Megjegyzés
----------------------------------------------------------------------
-reg_rossz		|		|		|
-reg_helyes		|		|		|
-zene_rossz		|		|		|
-zene_helyes		|		|		|
+------------------------------------------------------------------------------------------------
+reg_rossz		|2019.12.10	|Sikeres	|Minden hibaüzenet megfelelően megjelent
+reg_helyes		|2019.12.10	|Sikeres	|Felhasználó adatbázisba került
+zene_rossz		|2019.12.10	|Sikeres	|Minden hibaüzenet megfelelően megjelent
+zene_helyes		|2019.12.10	|Sikeres	|Audio fájl adatbázisba került
+kép_rossz		|2019.12.10	|Sikeres	|Minden hibaüzenet megfelelően megjelent
+kép_helyes		|2019.12.10	|Sikeres	|Kép fájl adatbázisba került
