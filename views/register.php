@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     $username_err = "This username is already taken.";
                 } 
             } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                echo "Oops! Something went wrong. Please try again later. username";
             }
         }
          
@@ -66,7 +66,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
          
         if($stmt = $mysqli->prepare($sql)){
             // Bind variables to the prepared statement as parameters
-            $stmt->bind_param("ss", $username, $param_password, $email);
+            $stmt->bind_param("sss", $username, $param_password, $email);
             
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
             
@@ -74,7 +74,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if($stmt->execute()){
                 redirect('login');
             } else{
-                echo "Something went wrong. Please try again later.";
+                echo "Something went wrong. Please try again later.user";
             }
         }
          
