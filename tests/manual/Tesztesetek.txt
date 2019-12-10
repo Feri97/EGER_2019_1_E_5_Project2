@@ -11,3 +11,6 @@ kép_helyes - Megfelelő kép fájl feltöltése
 
 album_rossz - Album feltöltés hibás adatokkal
 album_helyes - Album feltöltés helyes adatokkal
+
+lejátszási_lista_rossz - A rendszer nem tölti be a zenéket a lejátszási listába
+lejátszási_lista_helyes - A rendszer betölti a zenéket a lejátszási listába 
