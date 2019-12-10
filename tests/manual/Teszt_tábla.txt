@@ -6,3 +6,5 @@ zene_rossz		|2019.12.10	|Sikeres	|Minden hibaüzenet megfelelően megjelent
 zene_helyes		|2019.12.10	|Sikeres	|Audio fájl adatbázisba került
 kép_rossz		|2019.12.10	|Sikeres	|Minden hibaüzenet megfelelően megjelent
 kép_helyes		|2019.12.10	|Sikeres	|Kép fájl adatbázisba került
+album_rossz		|2019.12.10	|Sikeres	|Minden hibaüzenet megfelelően megjelent
+album_helyes		|2019.12.10	|Sikeres	|Az album adatbázisba került

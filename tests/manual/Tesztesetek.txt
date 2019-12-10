@@ -8,3 +8,6 @@ zene_helyes - Megfelelő audio fájl feltöltése
 
 kép_rossz - Nem megfelelő kép fájl feltöltése
 kép_helyes - Megfelelő kép fájl feltöltése
+
+album_rossz - Album feltöltés hibás adatokkal
+album_helyes - Album feltöltés helyes adatokkal
