@@ -145,7 +145,7 @@ if (count($errors) == 0) {
             <button class="btn" type="submit" name="save">Save</button>
         </div>
 </form>
-?php 
+<?php 
 $query3 = "SELECT * FROM musics WHERE album_id=:albumid " ;
 $params3 = [':albumid' => $_GET['id']];
 $records3 = getList($query3, $params3);
