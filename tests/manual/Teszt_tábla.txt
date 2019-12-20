@@ -10,3 +10,7 @@ album_rossz		|2019.12.10	|Sikeres	|Minden hibaüzenet megfelelően megjelent
 album_helyes		|2019.12.10	|Sikeres	|Az album adatbázisba került
 lejátszási_lista_rossz	|2019.12.10	|Sikeres	|Minden hibaüzenet megfelelően megjelent
 lejátszási_lista_helyes	|2019.12.10	|Sikeres	|A zenék sikeresen bekerültek a lejátszási listába
+bejelentkezés_rossz	|2019.12.10	|Sikeres	|Minden hibaüzenet megfelelően megjelent
+bejelentkezés_helyes	|2019.12.10	|Sikeres	|Sikeresen bejelentkeztünk
+delete_album		|2019.12.10	|Sikeres	|Sikeresen törlődik az adatbázisból
+reset_password		|2019.12.10	|Sikeres	|Jelszó változik az adatabázisban

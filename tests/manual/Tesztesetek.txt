@@ -14,3 +14,9 @@ album_helyes - Album feltöltés helyes adatokkal
 
 lejátszási_lista_rossz - A rendszer nem tölti be a zenéket a lejátszási listába
 lejátszási_lista_helyes - A rendszer betölti a zenéket a lejátszási listába 
+
+bejelentkezés_helyes - Bejelentkezés helyes adatokkal
+bejelentkezés_rossz - Bejelentkezés hibás adatokkal
+
+delete_album - Album törlése
+reset_password - Jelszó megváltoztatása
